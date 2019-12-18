@@ -8,8 +8,8 @@ import (
 	"strings"
 	"text/template"
 
-	ssp "github.com/smw1218/sqrl-ssp"
-	"github.com/smw1218/sqrl-ssp/server/homepage"
+	ssp "github.com/sqrldev/server-go-ssp"
+	"github.com/sqrldev/server-go-ssp/server/homepage"
 )
 
 var sqrljs *template.Template

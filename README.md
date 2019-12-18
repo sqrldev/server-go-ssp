@@ -12,8 +12,8 @@ of session management you desire. It also allows pluggable storage options and s
 
 This project is still very much a work in-progress. All the endpoints log a ton of debugging information.
 
-[![Documentation](https://godoc.org/github.com/smw1218/sqrl-ssp?status.svg)](https://godoc.org/github.com/smw1218/sqrl-ssp)
-[![Go Report Card](https://goreportcard.com/badge/github.com/smw1218/sqrl-ssp)](https://goreportcard.com/report/github.com/smw1218/sqrl-ssp)
+[![Documentation](https://godoc.org/github.com/sqrldev/server-go-ssp?status.svg)](https://godoc.org/github.com/sqrldev/server-go-ssp)
+[![Go Report Card](https://goreportcard.com/badge/github.com/sqrldev/server-go-ssp)](https://goreportcard.com/report/github.com/sqrldev/server-go-ssp)
 
 ## Integration ##
 The ssp.SqrlSspAPI struct is a configurable server that exposes http.HandlerFuncs that implement the SSP API. The main one
@@ -33,8 +33,8 @@ The SSP API has requirements for storage exposed by the Hoard and AuthStore inte
 Nuts are SQRL's cryptographic nonces. A Hoard also has stores pending auth information associated with the Nut. These are ephemperal and have an
 expiration so are best stored in a in-memory store like Redis or memcached. The AuthStore saves the SQRL identity information and should be a durable database like PostgreSQL or MariaDB. Both are interfaces so any storage should be able to be plugged in. The ssp package provides map-backed implementations for both which are *NOT* recommended for production use. 
 
-I've written a Redis-backed Hoard implementation at [github.com/smw1218/sqrl-redishoard](https://github.com/smw1218/sqrl-redishoard)
-I've written a GORM-backed (GORM supports several different database backends) AuthStore implementation at [github.com/smw1218/sqrl-gormauthstore](https://github.com/smw1218/sqrl-gormauthstore)
+I've written a Redis-backed Hoard implementation at [github.com/sqrldev/server-go-ssp-redishoard](https://github.com/sqrldev/server-go-ssp-redishoard)
+I've written a GORM-backed (GORM supports several different database backends) AuthStore implementation at [github.com/sqrldev/server-go-ssp-gormauthstore](https://github.com/sqrldev/server-go-ssp-gormauthstore)
 
 
 ### Trees ###

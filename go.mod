@@ -1,4 +1,4 @@
-module github.com/smw1218/sqrl-ssp
+module github.com/sqrldev/server-go-ssp
 
 go 1.12
 
