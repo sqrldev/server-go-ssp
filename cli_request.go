@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/crypto/ed25519"
+	"crypto/ed25519"
 )
 
 // ParseSqrlQuery copied from go's url.ParseQuery with some modifications.
